@@ -26,7 +26,7 @@
 
   <body>
 
-    <nav class="navbar navbar-default" style="margin-bottom:0px;">
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -47,15 +47,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="login.html">
-                Đăng nhập
-              </a>
-            </li>
-            <li>
-              <a href="register.html">
-                Đăng kí
-              </a>
+            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Trang cá nhân</a></li>
+                <li><a href="#">Tin nhắn</a></li>
+                <li><a href="#">Cài đặt</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Đăg xuất</a></li>
+              </ul>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -64,45 +65,12 @@
 
 
     <!-- Main Content -->
-    <div class="contentContainer container-fluid">
+    <div class="container-fluid">
 
-      <div class="index-first-row row">
-
-        <div class="slogan-row row">
-          <div id="slogan" class="col-lg-12 col-sm-4">
-            <span id="slogan">Nan nanan nanna a na</span>
-          </div>
-        </div>
-
-        <div class="buttons-row row" style="height:4em;">
-          <div class="col-centered col-lg-2 col-lg-offset-4 col-sm-4">  
-            <a href="login.html" class="btn btn-success" role="button">Đăng nhập</a>
-          </div>
-          <div class="col-centered col-lg-2 col-sm-4">  
-            <a href="register.html" class="btn btn-warning" role="button">Đăng kí</a>
-          </div>
-        </div>
-
-        <div class="course-row row" style="height:4em;">
-          <div class="col-centered col-lg-12 col-sm-4">
-            <a href="all-courses.html" class="btn btn-primary" role="button">Danh sách khoá học</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="index-second-row row" style="height:400px;border:2px solid;">
-        <div class="col-lg-4 col-sm-4" style="height:inherit;border:1px solid;">
-          Item 1
-        </div>
-        <div class="col-lg-4 col-sm-4" style="height:inherit;border:1px solid;">
-          Item 2
-        </div>
-        <div class="col-lg-4 col-sm-4" style="height:inherit;border:1px solid;">
-          Item 3
-        </div>
-      </div>
+      
 
     </div>
+
 
 
     <!-- FOOTER -->
@@ -122,8 +90,6 @@
         </div>
       </div>
     </footer>
-
-
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

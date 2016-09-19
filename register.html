@@ -62,47 +62,53 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-
     <!-- Main Content -->
     <div class="contentContainer container-fluid">
 
-      <div class="index-first-row row">
+      <div class="form-container row">
 
-        <div class="slogan-row row">
-          <div id="slogan" class="col-lg-12 col-sm-4">
-            <span id="slogan">Nan nanan nanna a na</span>
+        <div class="main-col col-lg-8 col-lg-offset-2 col-sm-4" style="border:1px solid;">
+        <!-- login form -->
+        <h2>Đăng kí</h2>
+        <form id="register-form">
+          <div class="form-group">
+            <label for="email">Địa chỉ email:</label>
+            <input type="email" class="form-control" id="email">
           </div>
-        </div>
-
-        <div class="buttons-row row" style="height:4em;">
-          <div class="col-centered col-lg-2 col-lg-offset-4 col-sm-4">  
-            <a href="login.html" class="btn btn-success" role="button">Đăng nhập</a>
+          <div class="form-group">
+            <label for="name">Họ và tên:</label>
+            <input type="name" class="form-control" id="name">
           </div>
-          <div class="col-centered col-lg-2 col-sm-4">  
-            <a href="register.html" class="btn btn-warning" role="button">Đăng kí</a>
+          <div class="form-group">
+            <label for="pwd">Mật khẩu:</label>
+            <input type="password" class="form-control" id="pwd">
           </div>
-        </div>
-
-        <div class="course-row row" style="height:4em;">
-          <div class="col-centered col-lg-12 col-sm-4">
-            <a href="all-courses.html" class="btn btn-primary" role="button">Danh sách khoá học</a>
+          <div class="form-group">
+            <label for="re-pwd">Nhập lại mật khẩu:</label>
+            <input type="password" class="form-control" id="re-pwd">
           </div>
-        </div>
-      </div>
-
-      <div class="index-second-row row" style="height:400px;border:2px solid;">
-        <div class="col-lg-4 col-sm-4" style="height:inherit;border:1px solid;">
-          Item 1
-        </div>
-        <div class="col-lg-4 col-sm-4" style="height:inherit;border:1px solid;">
-          Item 2
-        </div>
-        <div class="col-lg-4 col-sm-4" style="height:inherit;border:1px solid;">
-          Item 3
+          <div class="form-group">
+            <label>Trình độ giáo dục:</label>
+            <select class="form-control" id="sel1">
+              <option>Trung học phổ thông</option>
+              <option>Trung cấp</option>
+              <option>Cao đẳng</option>
+              <option>Đại học</option>
+            </select>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"> Tôi đã đọc và chấp nhận các điều khoản sử dụng.</label>
+          </div>
+          <button type="submit" class="btn btn-default">Đăng kí</button>
+          <div>
+          Đã có tài khoản ?<a href="login.html"> Đăng nhập.</a>
+          </div>
+        </form>
         </div>
       </div>
 
     </div>
+
 
 
     <!-- FOOTER -->
@@ -122,8 +128,6 @@
         </div>
       </div>
     </footer>
-
-
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

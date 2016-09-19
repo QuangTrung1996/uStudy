@@ -64,45 +64,80 @@
 
 
     <!-- Main Content -->
-    <div class="contentContainer container-fluid">
+    <div class="container-fluid">
 
-      <div class="index-first-row row">
+      <div class="filter-bar row">
 
-        <div class="slogan-row row">
-          <div id="slogan" class="col-lg-12 col-sm-4">
-            <span id="slogan">Nan nanan nanna a na</span>
-          </div>
+        <!-- category -->
+        <div class="filter-form form-group col-lg-4 col-sm-4">
+          <label for="category">Danh mục:</label>
+          <select class="form-control" id="category">
+            <option>Toán học</option>
+            <option>Vật lí</option>
+            <option>Tin học</option>
+          </select>
         </div>
 
-        <div class="buttons-row row" style="height:4em;">
-          <div class="col-centered col-lg-2 col-lg-offset-4 col-sm-4">  
-            <a href="login.html" class="btn btn-success" role="button">Đăng nhập</a>
-          </div>
-          <div class="col-centered col-lg-2 col-sm-4">  
-            <a href="register.html" class="btn btn-warning" role="button">Đăng kí</a>
-          </div>
+        <!-- search bar -->
+        <div class="filter-search input-group col-lg-4 col-lg-offset-8 col-sm-4">
+          <input type="text" class="form-control" placeholder="Nhập nội dung tìm kiếm...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </span>
         </div>
 
-        <div class="course-row row" style="height:4em;">
-          <div class="col-centered col-lg-12 col-sm-4">
-            <a href="all-courses.html" class="btn btn-primary" role="button">Danh sách khoá học</a>
-          </div>
-        </div>
       </div>
 
-      <div class="index-second-row row" style="height:400px;border:2px solid;">
-        <div class="col-lg-4 col-sm-4" style="height:inherit;border:1px solid;">
-          Item 1
+      <div class="course-container row">
+        <div class="card-container col-lg-4 col-sm-4">
+          <div class="flat-card">
+            <img src="src/images/demo-cover.png" class="fc--cover">
+            <div class="fc--description">
+              <h4><b>Nana na</b></h4>
+              <p>Na nana na anaan an a  an an a nanana na an an an an an an an an ana.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4 col-sm-4" style="height:inherit;border:1px solid;">
-          Item 2
+        <div class="card-container col-lg-4 col-sm-4">
+          <div class="flat-card">
+            <img src="src/images/demo-cover.png" class="fc--cover">
+            <div class="fc--description">
+              <h4><b>Nana na</b></h4>
+              <p>Na nana na anaan an a  an an a nanana na an an an an an an an an ana.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4 col-sm-4" style="height:inherit;border:1px solid;">
-          Item 3
+        <div class="card-container col-lg-4 col-sm-4">
+          <div class="flat-card">
+            <img src="src/images/demo-cover.png" class="fc--cover">
+            <div class="fc--description">
+              <h4><b>Nana na</b></h4>
+              <p>Na nana na anaan an a  an an a nanana na an an an an an an an an ana.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container col-lg-4 col-sm-4">
+          <div class="flat-card">
+            <img src="src/images/demo-cover.png" class="fc--cover">
+            <div class="fc--description">
+              <h4><b>Nana na</b></h4>
+              <p>Na nana na anaan an a  an an a nanana na an an an an an an an an ana.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container col-lg-4 col-sm-4">
+          <div class="flat-card">
+            <img src="src/images/demo-cover.png" class="fc--cover">
+            <div class="fc--description">
+              <h4><b>Nana na</b></h4>
+              <p>Na nana na anaan an a  an an a nanana na an an an an an an an an ana.</p>
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
+
 
 
     <!-- FOOTER -->
@@ -122,8 +157,6 @@
         </div>
       </div>
     </footer>
-
-
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
