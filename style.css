@@ -27,6 +27,8 @@ nav.navbar {
 */
 .index-first-row {
   background-image: url("src/images/index-cover.jpg");
+  padding-bottom: 30px;
+  margin-bottom: -50px;
 }
 
 .course-row, .buttons-row {
@@ -38,16 +40,13 @@ nav.navbar {
 }
 
 #slogan {
-  height: 400px;
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 2em;
   font-family: serif;
-}
-#slogan span {
-
 }
 
 .col-centered {
