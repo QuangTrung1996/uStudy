@@ -17,12 +17,24 @@ footer .members {
   padding: 0px;
 }
 
+nav.navbar {
+  margin-bottom: 20px;
+}
+
 
 /*
 ** index.html
 */
 .index-first-row {
   background-image: url("src/images/index-cover.jpg");
+}
+
+.course-row, .buttons-row {
+  padding: 10px;
+}
+
+.buttons-row a {
+  margin: 5px;
 }
 
 #slogan {
@@ -53,8 +65,8 @@ footer .members {
   margin-top: 30px;
 }
 
-.main-col.col-lg-8.col-lg-offset-2.col-sm-4 {
-  padding-bottom: 20px;
+.main-col{
+  padding-bottom: 15px;
   background-color: #f5f5f5;
 }
 

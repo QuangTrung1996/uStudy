@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>uStudy</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Optional theme
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <!-- use this for brand image
+          <img alt="Brand" src="...">
+        -->
+        uStudy
+      </a>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="login.html">
+            Đăng nhập
+          </a>
+        </li>
+        <li>
+          <a href="register.html">
+            Đăng kí
+          </a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    </div> <!-- ! container-fluid -->
+  </nav>
+
+  <style>
+    .course-banner {
+      padding: 15px;
+      border: 1px solid gray;
+    }
+  </style>
+
+  <!-- Main Content -->
+  <div class="contentContainer container-fluid">
+    <div class="nav-links">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="all-courses.html">Danh sách khóa học</a></li>
+        <li class="active">Nhập môn khoa học máy tính</li>
+      </ol>
+    </div>
+
+    <div class="row">
+      <div class="course-banner col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+        <div class="col-md-8 col-sm-12 col-xs-12">
+          <h2>Nhập môn khoa học máy tính</h2>
+          <hr>
+          by <strong>Van V</strong><hr>
+          <a href="#" class="btn btn-primary disabled" onclick="alert('Vui lòng đăng nhập để sử dụng tính năng này');">Đăng kí học</a>
+        </div>
+        <img class="col-md-4 col-sm-12 col-xs-12 img-responsive" src="src/images/demo-cover.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="course-detail col-md-10 col-md-offset-1 col-sm-12 col-xs-12 well">
+        <h3>Giới thiệu</h3>
+        <p class="">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+
+
+  </div><!-- /.container-fluid -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-row row">
+      <div class="col-lg-8 col-sm-4">
+        <image src="src/images/hcmute.svg" width="75px" height="75px">
+          <span>Trường Đại học Sư phạm Kỹ thuật TP.HCM</span>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <span><b>Nhóm:</b></span>
+          <ul class="members">
+            <li>Nguyễn Chánh Tín</li>
+            <li>Lương Văn Thuận</li>
+            <li>Trần Quang Trung</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

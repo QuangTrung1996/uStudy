@@ -8,16 +8,11 @@
     <title>uStudy</title>
 
     <!-- Bootstrap -->
-    <!-- Latest compiled and minified CSS
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-  <!-- Optional theme
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.mn.css">
+    <!-- Optional theme-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -59,7 +54,7 @@
                 <li><a href="user-messages.html">Tin nhắn</a></li>
                 <li><a href="#">Cài đặt</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Đăg xuất</a></li>
+                <li><a href="index.html">Đăg xuất</a></li>
               </ul>
             </li>
           </ul>
@@ -109,66 +104,84 @@
             <div id="big-avatar"></div>
             <span class="username-s">Username</span>
           </div>
+          <div class="info-row2">
+            <form>
+              <div class="form-group">
+                <label class="control-label" for="inputName">Họ Tên</label>
+                <input type="text"  class="form-control" id="inputName" placeholder="Nguyen Van A" disabled>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="inputBD">Ngày sinh</label>
+                <input type="text"  class="form-control" id="inputBD" placeholder="26//03/1996" disabled>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="inputDC">Địa chỉ</label>
+                <input type="text" class="form-control" id="inputDC" placeholder="N/A" disabled>
+              </div>
+              <a href="#" class="btn btn-default">Chỉnh sửa thông tin</a>
+            </form>
+          </div>
         </div>
+
         <div class="my-course-container col-md-7">
           <div class="row">
             <h4 style="margin-left:15px;">Các khoá đã đăng kí</h4>
           </div>
           <div class="row">
 
-            <div class="card-container col-md-6 col-sm-4 col-xs-12">
+            <div class="card-container col-md-6 col-sm-6 col-xs-12">
+              <div class="flat-card" onclick="window.location='course-detail-logined.html'">
+                <img src="src/images/demo-cover.png" class="fc--cover">
+                <div class="fc--description">
+                  <h4><b>Nhập môn khoa học máy tính</b></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-container col-md-6 col-sm-6 col-xs-12">
               <div class="flat-card">
                 <img src="src/images/demo-cover.png" class="fc--cover">
                 <div class="fc--description">
                   <h4><b>Nana na</b></h4>
-                  <p>Na nana na anaan an a  an an a nanana na an an an an an an an an ana.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
             </div>
-            <div class="card-container col-md-6 col-sm-4 col-xs-12">
+            <div class="card-container col-md-6 col-sm-6 col-xs-12">
               <div class="flat-card">
                 <img src="src/images/demo-cover.png" class="fc--cover">
                 <div class="fc--description">
                   <h4><b>Nana na</b></h4>
-                  <p>Na nana na anaan an a  an an a nanana na an an an an an an an an ana.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
             </div>
-            <div class="card-container col-md-6 col-sm-4 col-xs-12">
+            <div class="card-container col-md-6 col-sm-6 col-xs-12">
               <div class="flat-card">
                 <img src="src/images/demo-cover.png" class="fc--cover">
                 <div class="fc--description">
                   <h4><b>Nana na</b></h4>
-                  <p>Na nana na anaan an a  an an a nanana na an an an an an an an an ana.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
             </div>
-            <div class="card-container col-md-6 col-sm-4 col-xs-12">
+            <div class="card-container col-md-6 col-sm-6 col-xs-12">
               <div class="flat-card">
                 <img src="src/images/demo-cover.png" class="fc--cover">
                 <div class="fc--description">
                   <h4><b>Nana na</b></h4>
-                  <p>Na nana na anaan an a  an an a nanana na an an an an an an an an ana.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
             </div>
-            <div class="card-container col-md-6 col-sm-4 col-xs-12">
-              <div class="flat-card">
-                <img src="src/images/demo-cover.png" class="fc--cover">
-                <div class="fc--description">
-                  <h4><b>Nana na</b></h4>
-                  <p>Na nana na anaan an a  an an a nanana na an an an an an an an an ana.</p>
-                </div>
-              </div>
-            </div>
-
+          </div>
+          <div class="row">
+            <a class="btn btn-primary" href="all-courses-logined.html" style="margin-left:15px;">Xem các khóa học khác</a>
           </div>
         </div>
       </div>
 
     </div> <!-- end container-fluid -->
-
-
 
     <!-- FOOTER -->
     <footer class="container-fluid">
@@ -189,13 +202,8 @@
     </footer>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    -->
-    <!-- Include all compiled plugins (below), or include individual files as needed
-    <!-- Latest compiled and minified JavaScript
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    -->
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
