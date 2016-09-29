@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>uStudy</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Optional theme-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="user-home.html">
+            <!-- use this for brand image
+            <img alt="Brand" src="...">
+            -->
+            uStudy
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="user-home.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+            <li><a href="user-messages.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="user-home.html">Trang cá nhân</a></li>
+                <li><a href="user-messages.html">Tin nhắn</a></li>
+                <li><a href="#">Cài đặt</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="index.html">Đăg xuất</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <!-- Main Content -->
+
+      <div class="container-fluid">
+        <div class="nav-links">
+          <ol class="breadcrumb">
+            <li><a href="user-home.html">Trang cá nhân</a></li>
+            <li class="active">Chỉnh sửa thông tin cá nhân</li>
+          </ol>
+        </div>
+        <div class="form-container row">
+          <div class="main-col col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" style="border:1px solid;padding-top:15px;">
+          <form id="info-change-form" class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="name">Họ và tên: </label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="name" placeholder="Nguyen Van A">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="email">Địa chỉ email:</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="BD">Ngày sinh:</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="BD">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="address">Địa chỉ:</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="address">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-4">Trình độ giáo dục:</label>
+              <div class="col-sm-8">
+                  <select class="form-control" id="sel1">
+                    <option>Trung học phổ thông</option>
+                    <option>Trung cấp</option>
+                    <option>Cao đẳng</option>
+                    <option>Đại học</option>
+                  </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="workplace">Trường học / nơi công tác:</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="workplace">
+              </div>
+            </div>
+            <div class="col-sm-8 col-sm-offset-4">
+              <button type="submit" class="btn btn-default">Xác nhận thay đổi</button>
+            </div>
+          </form>
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+      <div class="footer-row row">
+        <div class="col-lg-8 col-sm-4">
+          <image src="src/images/hcmute.svg" width="75px" height="75px">
+          <span>Trường Đại học Sư phạm Kỹ thuật TP.HCM</span>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <span><b>Nhóm:</b></span>
+          <ul class="members">
+            <li>Nguyễn Chánh Tín</li>
+            <li>Lương Văn Thuận</li>
+            <li>Trần Quang Trung</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
