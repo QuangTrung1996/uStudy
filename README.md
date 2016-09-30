@@ -1,4 +1,4 @@
 # uStudy
-online study (just DEMO)
+online study (DEMO)
 
 Live demo: https://ectn.github.io/uStudy/
