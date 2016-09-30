@@ -39,6 +39,10 @@ nav.navbar {
     background-color: #555;
 }
 
+.col-no-spacing {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 /*
 ** index.html

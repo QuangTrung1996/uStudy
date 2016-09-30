@@ -11,8 +11,10 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- Optional theme-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.mn.css">
+    <!-- Optional theme
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,7 +26,7 @@
 
   <body>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" style="margin-bottom:0px;">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -34,7 +36,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="user-home.html">
+          <a class="navbar-brand" href="index.html">
             <!-- use this for brand image
             <img alt="Brand" src="...">
             -->
@@ -42,63 +44,63 @@
           </a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Collect the nav links, forms, and other content for toggling
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="user-home.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
-            <li><a href="user-messages.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
-            <li class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="user-home.html">Trang cá nhân</a></li>
-                <li><a href="user-messages.html">Tin nhắn</a></li>
-                <li><a href="#">Cài đặt</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="index.html">Đăg xuất</a></li>
-              </ul>
+            <li>
+              <a href="login.html">
+                Đăng nhập
+              </a>
+            </li>
+            <li>
+              <a href="register.html">
+                Đăng kí
+              </a>
             </li>
           </ul>
-        </div><!-- /.navbar-collapse -->
+        </div> /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
+    <style>
+      .form-container{
+        margin-top: 30px;
+      }
+    </style>
 
     <!-- Main Content -->
-    <div class="container-fluid">
+    <div class="contentContainer container-fluid">
 
-      <div class="nav-links">
-        <ol class="breadcrumb">
-          <li><a href="user-home.html">Trang cá nhân</a></li>
-          <li><a href="user-messages.html">Tin nhắn</a></li>
-          <li class="active">Gửi tin nhắn</li>
-        </ol>
-      </div>
+      <div class="form-container row">
 
-      <div class="row">
-        <div class="messages-container col-md-6 col-md-offset-3" style="border:1px solid;background-color:#f9f9f9;padding:15px;">
-          <form action="" class="form-horizontal">
+        <div class="main-col col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" style="border:1px solid;height:inherit;">
+          <!-- login form -->
+          <h2>Đăng nhập Admin</h2>
+          <form id="login-form">
             <div class="form-group">
-              <label class="control-label col-sm-3" for="receiverID">Tên người nhận: </label>
-              <div class="col-sm-9">
-                <input type="text" class="form-control" id="receiverID">
-              </div>
+              <label for="username">Tên đăng nhập:</label>
+              <input type="email" class="form-control" id="username">
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-3" for="textMessage">Nội dung tin nhắn: </label>
-              <div class="col-sm-9">
-                <textarea type="text" rows="5" class="form-control" id="textMessage"></textarea>
-              </div>
+              <label for="pwd">Mật khẩu:</label>
+              <input type="password" class="form-control" id="pwd">
             </div>
-            <div class="col-sm-9 col-sm-offset-3">
-              <button type="submit" class="btn btn-default">Gửi</button>
+            <div>
+              <a href="#">Quên mật khẩu ?</a>
             </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Nhớ tài khoản</label>
+            </div>
+            <button type="submit" class="btn btn-default">Đăng nhập</button>
           </form>
+          <!-- Demo site dang nhap -->
+          <div>
+          <a href="admin-home.html">Đăng nhập (Test)</a>
+          </div>
         </div>
       </div>
 
-
-    </div> <!-- end container-fluid -->
-
+    </div>
 
 
     <!-- FOOTER -->
@@ -120,7 +122,8 @@
     </footer>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

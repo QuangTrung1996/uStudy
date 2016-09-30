@@ -34,7 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="user-home.html">
+          <a class="navbar-brand" href="admin-home.html">
             <!-- use this for brand image
             <img alt="Brand" src="...">
             -->
@@ -45,22 +45,25 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="user-home.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
-            <li><a href="user-messages.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
+            <li><a href="admin-home.html">Admin home</span></a></li>
+            <li><a href="admin-messages.html">Tin nhắn</span></a></li>
             <li class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="user-home.html">Trang cá nhân</a></li>
+              <a href="#" class="dropdown-toggle" id="action-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Admin
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="action-user">
+                <!--
+                <li><a href="admin-home.html">Admin home</a></li>
                 <li><a href="user-messages.html">Tin nhắn</a></li>
-                <li><a href="#">Cài đặt</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="index.html">Đăg xuất</a></li>
+                <li role="separator" class="divider"></li> -->
+                <li><a href="index.html">Đăng xuất</a></li>
               </ul>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </nav>
+    </nav><!-- /.navbar -->
 
 
     <!-- Main Content -->
@@ -68,8 +71,8 @@
 
       <div class="nav-links">
         <ol class="breadcrumb">
-          <li><a href="user-home.html">Trang cá nhân</a></li>
-          <li><a href="user-messages.html">Tin nhắn</a></li>
+          <li><a href="admin-home.html">Admin home</a></li>
+          <li><a href="admin-messages.html">Tin nhắn</a></li>
           <li class="active">Gửi tin nhắn</li>
         </ol>
       </div>
